@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="min-h-[calc(100vh-80px)] w-full bg-[#f8f9fa] flex flex-col pt-8 pb-36 px-4 sm:px-6 font-sans">
+    
+    <div class="w-full max-w-2xl mx-auto flex flex-col gap-6">
+        
+        <div class="text-center mt-2 mb-4">
+            <h2 class="text-4xl font-extrabold text-black tracking-tight">
+                Student <span class="bg-[#cdd0f8] px-2 rounded-sm transform -rotate-1 inline-block border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">Profile</span>
+            </h2>
+        </div>
+
+        <div class="bg-white border-2 border-black rounded-[2rem] p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex items-center gap-6">
+            <div class="w-20 h-20 bg-[#fde047] border-2 border-black rounded-full shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] flex items-center justify-center text-3xl font-black">
+                AS
+            </div>
+            <div>
+                <h3 class="text-2xl font-black text-black leading-tight">Azwad</h3>
+                <p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1">University of Queensland</p>
+                <span class="inline-block mt-2 bg-[#7bcbc3] text-black text-[10px] font-bold uppercase px-2 py-1 rounded-full border border-black">
+                    Engineering major
+                </span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-[#fbc9c3] border-2 border-black rounded-[1.5rem] p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center">
+                <p class="text-4xl font-black text-black">14</p>
+                <p class="text-[10px] font-bold text-black uppercase tracking-widest mt-1">Flaws Debugged</p>
+            </div>
+            <div class="bg-[#fde68a] border-2 border-black rounded-[1.5rem] p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] text-center">
+                <p class="text-4xl font-black text-black">32</p>
+                <p class="text-[10px] font-bold text-black uppercase tracking-widest mt-1">Claims Verified</p>
+            </div>
+        </div>
+
+        <div class="bg-white border-2 border-black rounded-[2rem] p-6 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mt-2">
+            <h3 class="font-black text-xl text-black mb-4 border-b-2 border-black pb-2">Learning Preferences</h3>
+            
+            <div class="flex items-center justify-between py-3 border-b-2 border-dashed border-gray-200">
+                <div>
+                    <p class="font-bold text-black text-lg">Strict Fact-Checking</p>
+                    <p class="text-xs text-gray-500 font-medium">Only use UQ Library trusted sources.</p>
+                </div>
+                <div class="w-14 h-8 bg-[#7bcbc3] border-2 border-black rounded-full relative shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] cursor-pointer">
+                    <div class="absolute right-1 top-1 w-5 h-5 bg-white border-2 border-black rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between py-3">
+                <div>
+                    <p class="font-bold text-black text-lg">Socratic Mode</p>
+                    <p class="text-xs text-gray-500 font-medium">AI hides flaws to test your logic.</p>
+                </div>
+                <div class="w-14 h-8 bg-[#fde047] border-2 border-black rounded-full relative shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] cursor-pointer">
+                    <div class="absolute right-1 top-1 w-5 h-5 bg-white border-2 border-black rounded-full"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+{% endblock %}
