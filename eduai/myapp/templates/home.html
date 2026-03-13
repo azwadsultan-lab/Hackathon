@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="mb-6">
+    <h2 class="text-xl font-bold text-gray-800">Area of Expertise</h2>
+    <p class="text-sm text-gray-500">Tap a subject to begin</p>
+</div>
+
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pb-20">
+
+    <a href="#" class="aspect-square bg-white shadow-sm rounded-2xl flex flex-col items-center justify-center border border-gray-100 hover:border-blue-500 hover:shadow-md transition-all group cursor-pointer">
+        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">📐</div>
+        <span class="font-bold text-gray-700">Maths</span>
+    </a>
+
+    <a href="#" class="aspect-square bg-white shadow-sm rounded-2xl flex flex-col items-center justify-center border border-gray-100 hover:border-blue-500 hover:shadow-md transition-all group cursor-pointer">
+        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">⚡</div>
+        <span class="font-bold text-gray-700">Physics</span>
+    </a>
+
+    <a href="#" class="aspect-square bg-white shadow-sm rounded-2xl flex flex-col items-center justify-center border border-gray-100 hover:border-blue-500 hover:shadow-md transition-all group cursor-pointer">
+        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">💻</div>
+        <span class="font-bold text-gray-700">Coding</span>
+    </a>
+
+    <a href="#" class="aspect-square bg-white shadow-sm rounded-2xl flex flex-col items-center justify-center border border-gray-100 hover:border-blue-500 hover:shadow-md transition-all group cursor-pointer">
+        <div class="text-4xl mb-3 group-hover:scale-110 transition-transform">🔬</div>
+        <span class="font-bold text-gray-700">Science</span>
+    </a>
+
+</div>
+{% endblock %}
