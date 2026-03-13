@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="min-h-[calc(100vh-80px)] w-full bg-[#f8f9fa] flex flex-col pt-8 pb-36 px-4 sm:px-6 font-sans">
+    
+    <div class="w-full max-w-4xl mx-auto flex flex-col gap-6">
+        
+        <div class="mb-4 text-center mt-4">
+            <span class="inline-block bg-[#fde68a] text-black text-[10px] font-bold uppercase tracking-widest px-4 py-2 rounded-full border-2 border-black shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] mb-4">
+                Knowledge Base
+            </span>
+            <h2 class="text-4xl md:text-5xl font-extrabold text-black tracking-tight">
+                Course 
+                <span class="relative inline-block z-10 px-1">
+                    Resources.
+                    <span class="absolute bottom-2 left-0 w-full h-3 bg-[#cdd0f8] -z-10 rounded-sm transform -rotate-1"></span>
+                </span>
+            </h2>
+            <p class="text-gray-600 font-medium mt-4 text-sm max-w-lg mx-auto">This database houses the verified syllabuses, textbooks, and past papers that the EduAi model relies on to guarantee accuracy.</p>
+        </div>
+
+        <div>
+            <h3 class="font-black text-xl text-black mb-3 border-b-2 border-black pb-2 flex items-center gap-2">
+                <span>📚</span> Official Textbooks
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="bg-white border-2 border-black rounded-2xl p-4 flex items-center justify-between shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all cursor-pointer text-left">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-[#fbc9c3] p-3 rounded-xl border-2 border-black">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-black text-sm">Chemistry Matters</p>
+                            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Marshall Cavendish (2nd Ed)</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="bg-white border-2 border-black rounded-2xl p-4 flex items-center justify-between shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all cursor-pointer text-left">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-[#fbc9c3] p-3 rounded-xl border-2 border-black">
+                            <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                        </div>
+                        <div>
+                            <p class="font-bold text-black text-sm">All About English</p>
+                            <p class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Hodder Education</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h3 class="font-black text-xl text-black mb-3 border-b-2 border-black pb-2 flex items-center gap-2">
+                <span>📋</span> SEAB Syllabus Documents
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="bg-[#7bcbc3] border-2 border-black rounded-2xl p-4 flex items-center justify-between shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all cursor-pointer text-left">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-white p-2 rounded-lg border-2 border-black font-black text-[10px]">PDF</div>
+                        <div>
+                            <p class="font-bold text-black text-sm">Chemistry (6092) Syllabus</p>
+                            <p class="text-[10px] text-black/70 font-bold uppercase tracking-wider">Examining Year 2026</p>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="bg-[#7bcbc3] border-2 border-black rounded-2xl p-4 flex items-center justify-between shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all cursor-pointer text-left">
+                    <div class="flex items-center gap-3">
+                        <div class="bg-white p-2 rounded-lg border-2 border-black font-black text-[10px]">PDF</div>
+                        <div>
+                            <p class="font-bold text-black text-sm">English Language (1184)</p>
+                            <p class="text-[10px] text-black/70 font-bold uppercase tracking-wider">Examining Year 2026</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-4">
+            <h3 class="font-black text-xl text-black mb-3 border-b-2 border-black pb-2 flex items-center gap-2">
+                <span>📝</span> Past Year Papers
+            </h3>
+            <div class="bg-white border-2 border-black rounded-2xl p-1 overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex flex-col">
+                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="p-4 border-b-2 border-dashed border-gray-200 flex justify-between items-center hover:bg-gray-50 cursor-pointer transition-colors text-left">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xl">📄</span>
+                        <p class="font-bold text-black text-sm">2023 Chemistry Paper 1 (MCQ)</p>
+                    </div>
+                    <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">2.1 MB</span>
+                </a>
+                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="p-4 border-b-2 border-dashed border-gray-200 flex justify-between items-center hover:bg-gray-50 cursor-pointer transition-colors text-left">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xl">📄</span>
+                        <p class="font-bold text-black text-sm">2023 Chemistry Paper 2 (Structured)</p>
+                    </div>
+                    <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">4.5 MB</span>
+                </a>
+                <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank" class="p-4 flex justify-between items-center hover:bg-gray-50 cursor-pointer transition-colors text-left">
+                    <div class="flex items-center gap-3">
+                        <span class="text-xl">📄</span>
+                        <p class="font-bold text-black text-sm">2023 English Paper 1 & 2</p>
+                    </div>
+                    <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">3.8 MB</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}

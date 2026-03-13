@@ -17,3 +17,5 @@ def verify_view(request):
     return render(request, 'verify.html')
 def profile_view(request):
     return render(request, 'profile.html')
+def resources_view(request):
+    return render(request, 'resources.html')
