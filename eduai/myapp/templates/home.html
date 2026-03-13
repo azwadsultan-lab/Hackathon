@@ -1,66 +1,135 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<div class="max-w-5xl mx-auto px-4 py-8 md:py-12 pb-24">
+<div class="min-h-[calc(100vh-80px)] w-full bg-[#f8f9fa] flex flex-col items-center pt-8 pb-32 px-4 sm:px-6 font-sans">
     
-    <div class="mb-10">
-        <span class="inline-block py-1 px-3 rounded-full bg-blue-50 border border-blue-100 text-blue-600 text-xs font-bold tracking-wider uppercase mb-3">
-            Student Dashboard
-        </span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-2">
-            Learn smarter with <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">EduAi</span>
-        </h2>
-        <p class="text-slate-500 max-w-2xl text-lg">
-            Select a subject below to begin your verified, hallucination-free study session. Every answer is backed by credible sources.
-        </p>
-    </div>
+    <div class="w-full max-w-5xl mx-auto">
+        
+        <div class="text-center mb-10 mt-4">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-black tracking-tight mb-2">
+                Good Morning
+            </h1>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-black">
+                Learn with 
+                <span class="relative inline-block z-10 px-1">
+                    EduAi
+                    <span class="absolute bottom-1 left-0 w-full h-4 bg-[#fde047] -z-10 rounded-sm transform -rotate-1"></span>
+                </span>
+            </h2>
+            <p class="text-gray-600 font-medium mt-4 text-sm uppercase tracking-widest">Verified Academic Sources</p>
+        </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-6 w-full mt-8">
 
-        <a href="/subject/" class="relative flex flex-col items-start p-6 bg-white rounded-3xl shadow-[0_2px_10px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:border-blue-200 transition-all duration-300 hover:-translate-y-1 group overflow-hidden cursor-pointer">
-            <div class="absolute -top-10 -right-10 w-32 h-32 bg-blue-50 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 ease-in-out"></div>
-            
-            <div class="relative w-14 h-14 bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl flex items-center justify-center shadow-inner mb-5 group-hover:-rotate-6 group-hover:scale-110 transition-transform duration-300">
-                <span class="text-2xl">📐</span>
+            <div class="relative group mt-3">
+                <div class="absolute -top-4 left-8 w-2 h-8 bg-white border-2 border-black rounded-full z-10 shadow-sm"></div>
+                <div class="absolute -top-4 right-8 w-2 h-8 bg-white border-2 border-black rounded-full z-10 shadow-sm"></div>
+                
+                <a href="/ask/" class="block rounded-[2rem] border-2 border-black bg-white overflow-hidden hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200">
+                    <div class="bg-[#7bcbc3] p-6 pb-8 border-b-2 border-black">
+                        <span class="inline-block bg-[#5aa8a0] text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1.5 rounded-full border border-black mb-4">
+                            Discipline
+                        </span>
+                        <h3 class="text-2xl font-bold text-black mb-2 flex justify-between items-center">
+                            Engineering <span class="text-3xl bg-white rounded-full p-1 border border-black shadow-sm">⚙️</span>
+                        </h3>
+                        <p class="text-black/80 text-sm font-medium leading-relaxed">Troubleshoot hardware and circuits safely.</p>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-white">
+                        <div class="text-center w-1/2 border-r-2 border-black">
+                            <p class="font-bold text-black text-lg">Hardware</p>
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">Focus</p>
+                        </div>
+                        <div class="text-center w-1/2">
+                            <p class="font-bold text-black text-lg">100%</p>
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">Verified</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            
-            <h3 class="font-bold text-slate-800 text-xl mb-1 relative z-10">Mathematics</h3>
-            <p class="text-sm text-slate-500 relative z-10">Master formulas and logic with step-by-step verification.</p>
-        </a>
 
-        <a href="/subject/" class="relative flex flex-col items-start p-6 bg-white rounded-3xl shadow-[0_2px_10px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:border-amber-200 transition-all duration-300 hover:-translate-y-1 group overflow-hidden cursor-pointer">
-            <div class="absolute -top-10 -right-10 w-32 h-32 bg-amber-50 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 ease-in-out"></div>
-            
-            <div class="relative w-14 h-14 bg-gradient-to-br from-amber-100 to-amber-50 rounded-2xl flex items-center justify-center shadow-inner mb-5 group-hover:-rotate-6 group-hover:scale-110 transition-transform duration-300">
-                <span class="text-2xl">⚡</span>
+            <div class="relative group mt-3">
+                <div class="absolute -top-4 left-8 w-2 h-8 bg-white border-2 border-black rounded-full z-10 shadow-sm"></div>
+                <div class="absolute -top-4 right-8 w-2 h-8 bg-white border-2 border-black rounded-full z-10 shadow-sm"></div>
+                
+                <a href="/ask/" class="block rounded-[2rem] border-2 border-black bg-white overflow-hidden hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200">
+                    <div class="bg-[#fbc9c3] p-6 pb-8 border-b-2 border-black">
+                        <span class="inline-block bg-[#d8a6a0] text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1.5 rounded-full border border-black mb-4">
+                            Discipline
+                        </span>
+                        <h3 class="text-2xl font-bold text-black mb-2 flex justify-between items-center">
+                            Comp Sci <span class="text-3xl bg-white rounded-full p-1 border border-black shadow-sm">💻</span>
+                        </h3>
+                        <p class="text-black/80 text-sm font-medium leading-relaxed">Debug algorithms using trusted documentation.</p>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-white">
+                        <div class="text-center w-1/2 border-r-2 border-black">
+                            <p class="font-bold text-black text-lg">Software</p>
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">Focus</p>
+                        </div>
+                        <div class="text-center w-1/2">
+                            <p class="font-bold text-black text-lg">100%</p>
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">Verified</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            
-            <h3 class="font-bold text-slate-800 text-xl mb-1 relative z-10">Physics</h3>
-            <p class="text-sm text-slate-500 relative z-10">Explore mechanics and thermodynamics safely.</p>
-        </a>
 
-        <a href="/subject/" class="relative flex flex-col items-start p-6 bg-white rounded-3xl shadow-[0_2px_10px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:border-emerald-200 transition-all duration-300 hover:-translate-y-1 group overflow-hidden cursor-pointer">
-            <div class="absolute -top-10 -right-10 w-32 h-32 bg-emerald-50 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 ease-in-out"></div>
-            
-            <div class="relative w-14 h-14 bg-gradient-to-br from-emerald-100 to-emerald-50 rounded-2xl flex items-center justify-center shadow-inner mb-5 group-hover:-rotate-6 group-hover:scale-110 transition-transform duration-300">
-                <span class="text-2xl">💻</span>
+            <div class="relative group mt-3">
+                <div class="absolute -top-4 left-8 w-2 h-8 bg-white border-2 border-black rounded-full z-10 shadow-sm"></div>
+                <div class="absolute -top-4 right-8 w-2 h-8 bg-white border-2 border-black rounded-full z-10 shadow-sm"></div>
+                
+                <a href="/ask/" class="block rounded-[2rem] border-2 border-black bg-white overflow-hidden hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200">
+                    <div class="bg-[#fde68a] p-6 pb-8 border-b-2 border-black">
+                        <span class="inline-block bg-[#d9c471] text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1.5 rounded-full border border-black mb-4">
+                            Discipline
+                        </span>
+                        <h3 class="text-2xl font-bold text-black mb-2 flex justify-between items-center">
+                            Physics <span class="text-3xl bg-white rounded-full p-1 border border-black shadow-sm">🔭</span>
+                        </h3>
+                        <p class="text-black/80 text-sm font-medium leading-relaxed">Explore mechanics and optics with precision.</p>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-white">
+                        <div class="text-center w-1/2 border-r-2 border-black">
+                            <p class="font-bold text-black text-lg">Sciences</p>
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">Focus</p>
+                        </div>
+                        <div class="text-center w-1/2">
+                            <p class="font-bold text-black text-lg">100%</p>
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">Verified</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            
-            <h3 class="font-bold text-slate-800 text-xl mb-1 relative z-10">Computer Sci</h3>
-            <p class="text-sm text-slate-500 relative z-10">Debug and learn algorithms with trusted documentation.</p>
-        </a>
 
-        <a href="/subject/" class="relative flex flex-col items-start p-6 bg-white rounded-3xl shadow-[0_2px_10px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] border border-slate-100 hover:border-purple-200 transition-all duration-300 hover:-translate-y-1 group overflow-hidden cursor-pointer">
-            <div class="absolute -top-10 -right-10 w-32 h-32 bg-purple-50 rounded-full opacity-0 group-hover:opacity-100 group-hover:scale-150 transition-all duration-500 ease-in-out"></div>
-            
-            <div class="relative w-14 h-14 bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl flex items-center justify-center shadow-inner mb-5 group-hover:-rotate-6 group-hover:scale-110 transition-transform duration-300">
-                <span class="text-2xl">🔬</span>
+            <div class="relative group mt-3">
+                <div class="absolute -top-4 left-8 w-2 h-8 bg-white border-2 border-black rounded-full z-10 shadow-sm"></div>
+                <div class="absolute -top-4 right-8 w-2 h-8 bg-white border-2 border-black rounded-full z-10 shadow-sm"></div>
+                
+                <a href="/ask/" class="block rounded-[2rem] border-2 border-black bg-white overflow-hidden hover:-translate-y-1 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all duration-200">
+                    <div class="bg-[#cdd0f8] p-6 pb-8 border-b-2 border-black">
+                        <span class="inline-block bg-[#aab0db] text-white text-[10px] uppercase tracking-wider font-bold px-3 py-1.5 rounded-full border border-black mb-4">
+                            Discipline
+                        </span>
+                        <h3 class="text-2xl font-bold text-black mb-2 flex justify-between items-center">
+                            Economics <span class="text-3xl bg-white rounded-full p-1 border border-black shadow-sm">📈</span>
+                        </h3>
+                        <p class="text-black/80 text-sm font-medium leading-relaxed">Master supply/demand without the guesswork.</p>
+                    </div>
+                    <div class="flex justify-between items-center p-4 bg-white">
+                        <div class="text-center w-1/2 border-r-2 border-black">
+                            <p class="font-bold text-black text-lg">Business</p>
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">Focus</p>
+                        </div>
+                        <div class="text-center w-1/2">
+                            <p class="font-bold text-black text-lg">100%</p>
+                            <p class="text-[10px] uppercase tracking-wider text-gray-500 font-bold">Verified</p>
+                        </div>
+                    </div>
+                </a>
             </div>
-            
-            <h3 class="font-bold text-slate-800 text-xl mb-1 relative z-10">Chemistry</h3>
-            <p class="text-sm text-slate-500 relative z-10">Understand reactions without relying on AI guesswork.</p>
-        </a>
 
+        </div>
     </div>
 </div>
 {% endblock %}
